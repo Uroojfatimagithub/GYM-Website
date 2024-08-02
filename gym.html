@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <title>Gym Website</title>
+    <style>
+        * {
+            list-style: none;
+            box-sizing: border-box;
+            text-decoration: none;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 30px 10%;
+            background-color: #ffffff; /* Background color */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add box shadow */
+        }
+        .i a {
+            font-size: 100%;
+            color: black;
+        }
+        .nav {
+            padding: 10px 20px;
+            font-size: medium;
+            color: lightslategrey;
+            display: flex;
+            align-items: center;
+        }
+        .nav a {
+            padding: 10px 20px;
+            font-size: 19px;
+            color: lightslategrey;
+        }
+        section {
+            padding: 60px 50px;
+        }
+        .Home {
+            padding-top: 1%;
+        }
+        .Home-img {
+            padding: 60px 50px;
+            padding-right: 20%;
+            padding-top: 11%;
+        }
+        h3 {
+            font-size: 225%;
+            color: orangered;
+        }
+        button {
+            color: white;
+            background-color: orangered;
+            border: none;
+            padding: 15px 32px;
+            text-align: center;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 12px;
+            
+        }
+        button:hover{
+         background-color: #f8f9fa;
+         color: black;
+        }
+
+        /* Media Queries */
+        @media only screen and (max-width: 768px) {
+            header {
+                padding: 20px 5%; /* Adjust padding */
+            }
+            .Home-img img {
+                float: none;
+                width: 100%;
+                height: auto;
+                padding-right: 0;
+            }
+            .Home-img {
+                padding: 20px 10%;
+                text-align: center; /* Center the image */
+            }
+            .nav {
+                flex-direction: column; /* Arrange links vertically */
+                align-items: flex-start; /* Align links to the start */
+                background-color: #f8f9fa; /* Background color */
+                padding: 20px; /* Adjust padding */
+                position: static;
+            }
+            .nav a {
+                margin-bottom: 10px; /* Add space between links */
+            }
+            section {
+                padding: 40px 20px; /* Adjust padding */
+            }
+            .Home {
+                padding-top: 10%;
+            }
+            h3 {
+                font-size: 180%; /* Adjust font size */
+            }
+            button {
+                font-size: 14px; /* Adjust font size */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="i"><h1><a href="#">Gym Me</a></h1></div>
+        <div class="nav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Trainers</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </div>
+    </header>
+    <div class="Home-img animate__animated animate__backInLeft"><img src="img2.png" alt="" style="float:right; width:30%; height:40%;"> </div> 
+    <section class="Home animate__animated animate__backInRight">
+        <div class="Home-text">
+            <h2>Build & Train with Us!</h2>
+            <h3>Gym Builders</h3>
+            <p>Gyms have become a part of daily routines of many individuals. An app to take care of all the gym related activities would be a useful aid for these individuals. All of the gym related information in one spot. This app will show the gyms nearby to the user along with the joining fees. This will help the user to compare and decide which gym they want to register at. It will keep a record of the attendance of the user.. The user can scan a machine in the gym using this app and it will show them the right way to use the machine. This will be of great aid to the user if they don't know the use of a particular machine. Workout and diet plans will be listed for the users to follow.Gyms have become a part of daily routines of many individuals. An app to take care of all the gym related activities would be a useful aid for these individuals. All of the gym related information in one spot. This app will show the gyms nearby to the user along with the joining fees. This will help the user to compare and decide which gym they want to register at. It will keep a record of the attendance of the user.. The user can scan a machine in the gym using this app and it will show them the right way to use the machine. This will be of great aid to the user if they don't know the use of a particular machine. Workout and diet plans will be listed for the users to follow.</p>
+            <button type="button">Join Us</button>
+        </div>
+    </section>
+</body>
+</html>
